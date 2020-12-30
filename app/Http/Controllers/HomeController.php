@@ -10,6 +10,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $countdown = Countdown::all()->first();
+        $banner = Banner::all()->first();
+        return view('welcome', compact('countdown','banner'));
     }
 }

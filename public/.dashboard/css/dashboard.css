@@ -1,0 +1,8 @@
+.center{
+    text-align: center;
+}
+
+img.resize{
+    max-height:750px;
+    max-width: 100%;
+}

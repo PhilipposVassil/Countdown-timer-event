@@ -11,3 +11,7 @@
     font-size: 60px;
     margin-top: 0px;
 }
+img.resize{
+    max-height:750px;
+    max-width: 100%;
+}

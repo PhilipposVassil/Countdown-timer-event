@@ -4,16 +4,16 @@
 
     <div class="center">
         <h2>
-            Add Banner
+            Create an Event
         </h2>
     </div>
 
     <!-- Main content -->
     <section class="content-header">
         <div class="container">
-            <form method="POST" action="{{route('banner.store')}}" enctype="multipart/form-data">
+            <form method="POST" action="{{route('events.store')}}" enctype="multipart/form-data">
                 @csrf
-                @include('dashboard.banner._form',['banner' => false,'submitButtonText' => 'Upload Banner'])
+                @include('dashboard.events._form',['countdown' => $time,'checkbox' => false,'banner' => false,'submitButtonText' => 'Create Event'])
             </form>
         </div>
     </section>

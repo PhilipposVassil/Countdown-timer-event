@@ -20,18 +20,12 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
 
     Route::group(['prefix' => 'dashboard', 'middleware' => 'admin', 'namespace' => 'Dashboard'], function () {
-        Route::get('/', 'DashboardController@index')->name('Dashboard');
+        Route::get('/', 'DashboardController@index')->name('dashboard');
 
-        Route::get('/banner', 'BannerDashboardController@index')->name('banner');
-        Route::get('/banner/create', 'BannerDashboardController@create')->name('banner.create');
-        Route::post('/banner/store', 'BannerDashboardController@store')->name('banner.store');
-        Route::get('/banner/{banner}/edit', 'BannerDashboardController@edit')->name('banner.edit');
-        Route::patch('/banner/{banner}/update', 'BannerDashboardController@update')->name('banner.update');
-        Route::get('/countdown', 'CountdownDashboardController@index')->name('countdown');
-        Route::get('/countdown/create', 'CountdownDashboardController@create')->name('countdown.create');
-        Route::post('/countdown/store', 'CountdownDashboardController@store')->name('countdown.store');
-        Route::get('/countdown/{countdown}/edit', 'CountdownDashboardController@edit')->name('countdown.edit');
-        Route::patch('/countdown/{countdown}/update', 'CountdownDashboardController@update')->name('countdown.update');
-
+        Route::get('/events', 'EventsDashboardController@index')->name('events');
+        Route::get('/events/create', 'EventsDashboardController@create')->name('events.create');
+        Route::post('/events/store', 'EventsDashboardController@store')->name('events.store');
+        Route::get('/events/{events}/edit', 'EventsDashboardController@edit')->name('events.edit');
+        Route::patch('/events/{events}/update', 'EventsDashboardController@update')->name('events.update');
     });
 });

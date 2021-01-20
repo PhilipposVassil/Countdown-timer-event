@@ -64,11 +64,8 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Banner pages:</h6>
-                        <a class="collapse-item" href="{{route('banner')}}">Index</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Countdown pages:</h6>
-                        <a class="collapse-item" href="{{route('countdown')}}">Index</a>
+                        <h6 class="collapse-header">Event page:</h6>
+                        <a class="collapse-item" href="{{route('events')}}">Index</a>
                     </div>
                 </div>
             </li>

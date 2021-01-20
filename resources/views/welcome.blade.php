@@ -16,8 +16,7 @@
 <script src="/.dashboard/js/sb-admin-2.min.js"></script>
 
 <!-- Custom JS -->
-<script>window.countdown = <?php echo json_encode($countdown); ?>;</script>
-<script>window.banner = <?php echo json_encode($banner); ?>;</script>
+<script>window.events = <?php echo json_encode($events); ?>;</script>
 <script src="/js/countdown_clock.js"></script>
 
 

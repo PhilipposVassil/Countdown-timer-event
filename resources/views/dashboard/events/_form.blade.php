@@ -1,5 +1,5 @@
 <div class="form-row">
-    <div class="form-group col-md-4">
+    <div class="form-group col-md-4 max-width">
         <label for="countdown-timer">Choose date and time</label>
         <input type="datetime-local" class="form-control {{ $errors->has('countdown') ? 'is-invalid' :'' }}" name="countdown" value="{{$countdown}}" min="{{$time_now}}">
         @error('countdown')
@@ -7,7 +7,7 @@
         @enderror
     </div>
     @if($checkbox)
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-4 max-width">
             <label for="countdown">Disable Countdown?</label>
             <div class="form-group">
                 <input id='disable' type="checkbox" name="disable" value="1">

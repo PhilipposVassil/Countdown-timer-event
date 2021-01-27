@@ -6,3 +6,18 @@ img.resize{
     max-height:750px;
     max-width: 100%;
 }
+
+/***********Display CSS***********/
+@media screen
+and (max-width: 786px) {
+    .max-width {
+        flex: auto;
+        max-width: 100%;
+    }
+}
+@media screen
+and (min-width: 787px) {
+    .max-width {
+        max-width: 100%;
+    }
+}
